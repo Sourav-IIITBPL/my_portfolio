@@ -5,36 +5,42 @@ export const achievements: Achievement[] = [
     id: "leetcode",
     title: "LeetCode Knight — 1868 Rating",
     issuer: "LeetCode",
-    description: "Solved 500+ Data Structures & Algorithms problems, demonstrating strong problem-solving skills and CS fundamentals."
+    description: "500 DSA problems solved."
   },
   {
-    id: "hackvision",
-    title: "Top 100 Finalist",
-    issuer: "HackVision 2026",
-    description: "Recognized among the top 100 finalists in a highly competitive hackathon."
+    id: "codechef",
+    title: "2-Star Coder",
+    issuer: "CodeChef",
+    description: "Active competitive programming participant."
   },
   {
     id: "sih",
-    title: "Participant / Team Lead",
+    title: "National-level Participant & Team Lead",
     issuer: "Smart India Hackathon 2024",
-    description: "Led a team to develop solutions for complex real-world problems."
+    description: "Led a team in the national-level hackathon."
+  },
+  {
+    id: "hackvision",
+    title: "Top 100 finalist",
+    issuer: "HackVision 2026",
+    description: "Top 100 finalist among 400+ teams."
   },
   {
     id: "algouniversity",
     title: "Tech Fellowship",
     issuer: "AlgoUniversity",
-    description: "Selected for an intensive tech fellowship program focusing on advanced software engineering."
+    description: "2024 Stage 1 qualifier; secured Top 4000 among 20,000 participants."
   },
   {
     id: "herdao",
-    title: "Rust Cohort",
+    title: "Rust Cohort 1 Graduate",
     issuer: "HER DAO",
-    description: "Participated in a specialized cohort focusing on Rust development and systems programming."
+    description: "Successfully completed the Rust development cohort."
   },
   {
     id: "cyfrin",
-    title: "Updraft Certification",
+    title: "Updraft Certified",
     issuer: "Cyfrin",
-    description: "Certified in advanced smart contract security and auditing methodologies."
+    description: "Smart Contract Development & Security."
   }
 ];

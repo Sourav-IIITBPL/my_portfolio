@@ -20,13 +20,13 @@ export function Contact() {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
-              href="mailto:sourav.yadav@example.com" // Placeholder email, can be updated later if needed
+              href="mailto:sourav.dev.officials@gmail.com"
               className="w-full sm:w-auto px-8 py-4 bg-foreground text-background font-medium rounded-sm hover:bg-muted transition-colors flex items-center justify-center gap-2"
             >
               <Mail className="w-5 h-5" /> Send Message
             </a>
             <a 
-              href="https://linkedin.com/in/sourav-yadav"
+              href="https://linkedin.com/in/0xsourav"
               target="_blank"
               rel="noreferrer"
               className="w-full sm:w-auto px-8 py-4 bg-surface border border-border text-foreground font-medium rounded-sm hover:bg-surface-hover transition-colors flex items-center justify-center gap-2"

@@ -5,12 +5,12 @@ export const projects: Project[] = [
     slug: "preflight",
     title: "PreFlight",
     category: "Pre-Transaction Risk Analysis Platform",
-    description: "A pre-transaction risk analysis platform designed to simulate and guard on-chain transactions before they are executed. Provides a vital security layer using simulation and rule-based risk engines.",
-    technologies: ["Solidity", "Foundry", "Chainlink CRE", "React", "TypeScript", "Viem", "Browser Extension"],
+    description: "A transaction-security platform that simulates and analyzes DeFi transactions before execution to identify security and execution risks.",
+    technologies: ["Solidity", "Foundry", "Chainlink CRE", "React", "TypeScript", "Viem"],
     highlights: [
-      "Built a browser extension for preemptive transaction capture.",
-      "Integrated transaction simulation to detect malicious outcomes.",
-      "Developed on-chain guards using Chainlink CRE."
+      "Built a transaction-security platform that simulates and analyzes DeFi transactions before execution to identify security and execution risks.",
+      "Designed modular on-chain guards and off-chain simulation workflows for transaction validation and risk assessment.",
+      "Integrated React/TypeScript frontend with smart contracts and transaction-analysis services."
     ],
     architecture: [
       "USER TRANSACTION",
@@ -21,19 +21,19 @@ export const projects: Project[] = [
       "RISK ENGINE",
       "SECURITY DECISION"
     ],
-    github: "https://github.com/Sourav-IIITBPL", // Will update if specific repo is known
+    github: "https://github.com/Sourav-IIITBPL",
     image: "/images/preflight-project-logo.png"
   },
   {
     slug: "settleone",
     title: "SettleOne",
     category: "Payment Commitment Platform",
-    description: "A full-stack transaction platform for payment commitments, escrow, and dispute resolution. Bridges frontend user experience with reliable backend settlement and smart contract execution.",
+    description: "A full-stack payment commitment platform supporting buyer-seller escrow workflows and transaction lifecycle management.",
     technologies: ["React", "Node.js", "Express.js", "PostgreSQL", "Solidity", "Foundry", "Viem"],
     highlights: [
-      "Architected a complete full-stack transaction lifecycle.",
-      "Implemented secure escrow mechanisms backed by smart contracts.",
-      "Designed PostgreSQL schema for commitment states and disputes."
+      "Built a full-stack payment commitment platform supporting buyer-seller escrow workflows and transaction lifecycle management.",
+      "Developed backend APIs for deal creation, transaction verification, dispute handling, and settlement.",
+      "Integrated wallet-based authentication, smart contracts, and frontend workflows using modular services."
     ],
     architecture: [
       "BUYER",
@@ -50,12 +50,12 @@ export const projects: Project[] = [
     slug: "protocol-invariant-checker",
     title: "Protocol Invariant Checker",
     category: "Developer Security Tooling",
-    description: "A Rust-based CLI tool for analyzing protocol invariants. It provides trait-based abstractions and structured reporting to systematically validate core assumptions in distributed systems.",
+    description: "A modular Rust CLI for automated protocol invariant checking and structured security reports.",
     technologies: ["Rust", "CLI", "Protocol Analysis", "Testing"],
     highlights: [
-      "Designed trait-based abstractions for extensibility.",
-      "Developed an invariant engine to automatically validate constraints.",
-      "Generated structured reports for developer security insights."
+      "Developed a modular Rust CLI for automated protocol invariant checking and structured security reports.",
+      "Used trait-based abstractions to support reusable protocol implementations and extensible analysis pipelines.",
+      "Implemented validation workflows and unit tests for protocol-level properties."
     ],
     architecture: [
       "CLI",

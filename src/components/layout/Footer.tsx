@@ -9,8 +9,8 @@ export function Footer() {
         
         <div className="flex items-center gap-6 text-sm text-muted">
           <a href="https://github.com/Sourav-IIITBPL" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">GitHub</a>
-          <a href="https://linkedin.com/in/sourav-yadav" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">LinkedIn</a>
-          <a href="https://leetcode.com/u/sourav_yadav/" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">LeetCode</a>
+          <a href="https://linkedin.com/in/0xsourav" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">LinkedIn</a>
+          <a href="https://leetcode.com/u/SouravIIIT" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">LeetCode</a>
         </div>
       </div>
     </footer>

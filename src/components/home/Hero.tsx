@@ -45,8 +45,8 @@ export function Hero() {
           
           <div className="mt-16 pt-8 border-t border-border flex gap-6 text-sm text-muted font-mono">
             <a href="https://github.com/Sourav-IIITBPL" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">GITHUB</a>
-            <a href="https://linkedin.com/in/sourav-yadav" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">LINKEDIN</a>
-            <a href="https://leetcode.com/u/sourav_yadav/" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">LEETCODE</a>
+            <a href="https://linkedin.com/in/0xsourav" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">LINKEDIN</a>
+            <a href="https://leetcode.com/u/SouravIIIT" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">LEETCODE</a>
           </div>
         </motion.div>
       </div>

@@ -76,10 +76,10 @@ export function CommandPalette() {
             <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open("https://github.com/Sourav-IIITBPL", "_blank"))}>
               Open GitHub
             </Command.Item>
-            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open("https://linkedin.com/in/sourav-yadav", "_blank"))}>
+            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open("https://linkedin.com/in/0xsourav", "_blank"))}>
               Open LinkedIn
             </Command.Item>
-            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open("https://leetcode.com/u/sourav_yadav/", "_blank"))}>
+            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open("https://leetcode.com/u/SouravIIIT", "_blank"))}>
               Open LeetCode
             </Command.Item>
           </Command.Group>
