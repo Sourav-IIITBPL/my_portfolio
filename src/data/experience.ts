@@ -4,9 +4,9 @@ export const experiences: Experience[] = [
   {
     id: "blockchain-intern",
     role: "Blockchain Engineering Intern",
-    company: "skxyWtf",
+    company: "SKXYWTF",
     period: "Aug 2026 – Sep 2026",
-    location: "Part-time, Remote, Phoenix, USA",
+    location: "Part-time, Remote, Phoenix, AZ, USA",
     description: [
       "Developed an automatic LLM API-based smart contract auditing suite running static analysis tools and producing audit reports, with LLM API calls used to perform AI-agent-assisted auditing."
     ],

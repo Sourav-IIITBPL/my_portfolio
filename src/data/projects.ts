@@ -9,8 +9,7 @@ export const projects: Project[] = [
     technologies: ["Solidity", "Foundry", "Chainlink CRE", "React", "TypeScript", "Viem"],
     highlights: [
       "Built a transaction-security platform that simulates and analyzes DeFi transactions before execution to identify security and execution risks.",
-      "Designed modular on-chain guards and off-chain simulation workflows for transaction validation and risk assessment.",
-      "Integrated React/TypeScript frontend with smart contracts and transaction-analysis services."
+      "Designed modular on-chain guards and off-chain simulation workflows for transaction validation and risk assessment."
     ],
     architecture: [
       "USER TRANSACTION",
@@ -22,6 +21,7 @@ export const projects: Project[] = [
       "SECURITY DECISION"
     ],
     github: "https://github.com/Sourav-IIITBPL",
+    demo: "https://preflight-v1.vercel.app",
     image: "/images/preflight-project-logo.png"
   },
   {
@@ -32,8 +32,7 @@ export const projects: Project[] = [
     technologies: ["React", "Node.js", "Express.js", "PostgreSQL", "Solidity", "Foundry", "Viem"],
     highlights: [
       "Built a full-stack payment commitment platform supporting buyer-seller escrow workflows and transaction lifecycle management.",
-      "Developed backend APIs for deal creation, transaction verification, dispute handling, and settlement.",
-      "Integrated wallet-based authentication, smart contracts, and frontend workflows using modular services."
+      "Developed backend APIs for deal creation, transaction verification, dispute handling, and settlement."
     ],
     architecture: [
       "BUYER",
@@ -44,6 +43,7 @@ export const projects: Project[] = [
       "SETTLEMENT"
     ],
     github: "https://github.com/Sourav-IIITBPL",
+    demo: "https://settleone-marketing.settleone.workers.dev",
     image: "/images/settleone-project-logo.png"
   },
   {
@@ -54,8 +54,7 @@ export const projects: Project[] = [
     technologies: ["Rust", "CLI", "Protocol Analysis", "Testing"],
     highlights: [
       "Developed a modular Rust CLI for automated protocol invariant checking and structured security reports.",
-      "Used trait-based abstractions to support reusable protocol implementations and extensible analysis pipelines.",
-      "Implemented validation workflows and unit tests for protocol-level properties."
+      "Used trait-based abstractions to support reusable protocol implementations and extensible analysis pipelines."
     ],
     architecture: [
       "CLI",
@@ -64,7 +63,7 @@ export const projects: Project[] = [
       "VALIDATION",
       "STRUCTURED REPORT"
     ],
-    github: "https://github.com/Sourav-IIITBPL"
+    github: "https://github.com/Sourav-IIITBPL/protocol-invariant-checker"
   },
   {
     slug: "dexgateway",

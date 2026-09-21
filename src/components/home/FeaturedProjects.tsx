@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { projects } from "@/data/projects";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -53,19 +53,29 @@ export function FeaturedProjects() {
                     )}
                   </div>
 
-                  <div className="flex items-center gap-4">
+                  <div className="flex flex-wrap items-center gap-4">
                     <Link 
                       href={`/projects/${project.slug}`}
-                      className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-accent transition-colors"
+                      className="px-6 py-3 bg-foreground text-background font-medium rounded-sm hover:bg-muted transition-colors flex items-center justify-center gap-2"
                     >
-                      Read Case Study <ArrowRight className="w-4 h-4" />
+                      Case Study <ArrowRight className="w-4 h-4" />
                     </Link>
+                    {project.demo && (
+                      <a 
+                        href={project.demo} 
+                        target="_blank" 
+                        rel="noreferrer"
+                        className="px-4 py-3 bg-surface border border-border text-foreground font-medium rounded-sm hover:bg-surface-hover transition-colors flex items-center justify-center gap-2"
+                      >
+                        <ExternalLink className="w-4 h-4" /> Live
+                      </a>
+                    )}
                     {project.github && (
                       <a 
                         href={project.github} 
                         target="_blank" 
                         rel="noreferrer"
-                        className="text-muted hover:text-foreground transition-colors"
+                        className="p-3 bg-surface border border-border text-foreground font-medium rounded-sm hover:bg-surface-hover transition-colors flex items-center justify-center"
                         aria-label="GitHub Repository"
                       >
                         <GithubIcon className="w-5 h-5" />

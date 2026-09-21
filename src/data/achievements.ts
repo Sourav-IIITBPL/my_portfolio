@@ -3,15 +3,17 @@ import { Achievement } from "@/types";
 export const achievements: Achievement[] = [
   {
     id: "leetcode",
-    title: "LeetCode Knight — 1868 Rating",
+    title: "LeetCode Knight",
     issuer: "LeetCode",
-    description: "500 DSA problems solved."
+    description: "1868 max Rating; 500 DSA problems solved through consistent practice.",
+    link: "https://leetcode.com/u/SouravIIIT"
   },
   {
     id: "codechef",
     title: "2-Star Coder",
     issuer: "CodeChef",
-    description: "Active competitive programming participant."
+    description: "1493 max Rating, built through consistent participation in rated contests.",
+    link: "https://www.codechef.com/users/sourav_yadav25"
   },
   {
     id: "sih",
