@@ -58,13 +58,14 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="md:col-span-4 order-1 md:order-2 flex justify-center md:justify-end"
           >
-            <div className="relative w-48 h-48 md:w-full md:max-w-sm aspect-square rounded-full overflow-hidden border border-border grayscale hover:grayscale-0 transition-all duration-500">
+            <div className="relative w-48 md:w-full md:max-w-xs flex justify-center items-center grayscale hover:grayscale-0 transition-all duration-500 drop-shadow-2xl">
               <Image 
                 src="/images/my-photo.png" 
                 alt="Sourav Yadav" 
-                fill
+                width={400}
+                height={400}
                 priority
-                className="object-cover"
+                className="w-full h-auto object-contain"
               />
             </div>
           </motion.div>
