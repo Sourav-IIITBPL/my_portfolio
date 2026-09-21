@@ -70,8 +70,8 @@ export function CommandPalette() {
           </Command.Group>
           
           <Command.Group heading="External" className="text-xs font-mono text-muted px-2 py-1 mt-2">
-            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open("/resume/09-26-SDE-Resume.pdf", "_blank"))}>
-              Open Resume
+            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open("/resume/26-09-SDE.pdf", "_blank"))}>
+              View Resume
             </Command.Item>
             <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open("https://github.com/Sourav-IIITBPL", "_blank"))}>
               Open GitHub

@@ -36,7 +36,7 @@ export function Hero() {
                 View Projects <ArrowRight className="w-4 h-4" />
               </Link>
               <a 
-                href="/resume/09-26-SDE-Resume.pdf" 
+                href="/resume/26-09-SDE.pdf" 
                 target="_blank" 
                 rel="noreferrer"
                 className="px-6 py-3 bg-surface border border-border text-foreground font-medium rounded-sm hover:bg-surface-hover transition-colors flex items-center gap-2"

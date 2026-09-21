@@ -54,7 +54,7 @@ export function Navigation() {
             ))}
           </div>
           <div className="flex items-center gap-4 text-sm">
-            <Link href="/resume/09-26-SDE-Resume.pdf" target="_blank" className="text-foreground hover:text-accent transition-colors font-medium">
+            <Link href="/resume/26-09-SDE.pdf" target="_blank" className="text-foreground hover:text-accent transition-colors font-medium">
               Resume
             </Link>
             <Link href="#contact" className="px-4 py-2 bg-foreground text-background font-medium rounded-sm hover:bg-muted transition-colors">
@@ -103,7 +103,7 @@ export function Navigation() {
               ))}
               <div className="h-px bg-border my-2" />
               <Link
-                href="/resume/09-26-SDE-Resume.pdf"
+                href="/resume/26-09-SDE.pdf"
                 target="_blank"
                 className="text-lg font-medium text-foreground"
                 onClick={() => setIsOpen(false)}
