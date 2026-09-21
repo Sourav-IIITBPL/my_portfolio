@@ -16,6 +16,7 @@ export type Experience = {
   role: string;
   company: string;
   period: string;
+  location?: string;
   description: string[];
   technologies: string[];
 };
@@ -26,6 +27,7 @@ export type Achievement = {
   issuer: string;
   date?: string;
   description: string;
+  link?: string;
 };
 
 export type Certificate = {

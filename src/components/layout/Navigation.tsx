@@ -72,10 +72,12 @@ export function Navigation() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-foreground p-2"
+          type="button"
+          className="md:hidden text-foreground p-2 z-50"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle Menu"
         >
-          {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
 
@@ -86,9 +88,9 @@ export function Navigation() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 w-full glass border-b border-border shadow-xl md:hidden flex flex-col"
+            className="absolute top-full left-0 w-full bg-background/95 backdrop-blur-md border-b border-border shadow-2xl md:hidden flex flex-col overflow-hidden"
           >
-            <nav className="flex flex-col p-6 gap-4">
+            <nav className="flex flex-col px-6 py-8 gap-6">
               {navItems.map((item) => (
                 <Link
                   key={item.name}

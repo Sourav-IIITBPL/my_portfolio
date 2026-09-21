@@ -29,6 +29,19 @@ export function SecurityResearch() {
               <p className="text-muted mb-4">
                 Reviewed 20+ complex distributed software systems, developing reproducible proof-of-concepts and testing environments.
               </p>
+              
+              <div className="mb-6 p-4 bg-surface border border-border rounded-md">
+                <div className="text-xs font-mono text-muted mb-2 tracking-widest uppercase">Validated Findings</div>
+                <div className="flex flex-wrap items-end gap-2 text-foreground font-mono">
+                  <span className="text-3xl font-bold">11</span> <span className="text-sm pb-1">Total Vulnerabilities</span>
+                </div>
+                <div className="flex gap-4 mt-3 text-sm font-mono">
+                  <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-red-500"></span> 2 High</span>
+                  <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-yellow-500"></span> 3 Medium</span>
+                  <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-blue-500"></span> 6 Low</span>
+                </div>
+              </div>
+
               <ul className="space-y-2 text-sm font-mono text-muted">
                 <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent"></span> Invariant Reasoning</li>
                 <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent"></span> Architecture Analysis</li>

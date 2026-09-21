@@ -27,8 +27,15 @@ export function Experience() {
                 <span className="text-muted font-medium">{exp.company}</span>
               </div>
               
-              <div className="text-xs font-mono text-muted mb-6 px-2 py-1 bg-surface border border-border rounded inline-block">
-                {exp.period}
+              <div className="flex flex-wrap gap-3 mb-6">
+                <div className="text-xs font-mono text-muted px-2 py-1 bg-surface border border-border rounded inline-flex items-center">
+                  {exp.period}
+                </div>
+                {exp.location && (
+                  <div className="text-xs font-mono text-muted px-2 py-1 bg-surface/50 border border-border/50 rounded inline-flex items-center">
+                    {exp.location}
+                  </div>
+                )}
               </div>
               
               <ul className="space-y-3 text-muted mb-6">
