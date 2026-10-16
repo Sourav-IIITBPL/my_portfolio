@@ -12,18 +12,18 @@ export function Philosophy() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
-              I like understanding what happens underneath the abstraction.
+            <div className="text-xs font-mono text-accent tracking-widest uppercase mb-4">
+              About / Engineering Philosophy
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight text-foreground">
+              I approach software engineering from the inside out.
             </h2>
-            <div className="space-y-6 text-lg text-muted">
+            <div className="space-y-6 text-lg text-muted leading-relaxed">
               <p>
-                My engineering philosophy is rooted in building end-to-end systems with clean architecture, strict testing, and a focus on edge cases.
+                From designing relational data models and backend APIs to building interactive interfaces and testing complex state transitions, I focus on understanding how each component behaves—and how the entire system responds when things go wrong.
               </p>
               <p>
-                Whether it&apos;s designing a relational schema, orchestrating backend services, or writing smart contracts that secure real value, I prioritize performance, security, and developer experience.
-              </p>
-              <p>
-                I believe the best engineers don&apos;t just write code—they understand the whole system, from the database indices up to the client UI, and how to make it resilient against failure.
+                I value clean architecture, thoughtful engineering decisions, and rigorous testing to build software that is reliable, maintainable, and ready for real-world use.
               </p>
             </div>
           </motion.div>

@@ -19,7 +19,7 @@ export function Hero() {
             className="md:col-span-8 order-2 md:order-1"
           >
             <div className="inline-block px-3 py-1 mb-8 text-xs font-mono tracking-widest text-muted border border-border rounded-full bg-surface">
-              SOURAV YADAV / SOFTWARE DEVELOPMENT ENGINEER
+              SOURAV YADAV
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground leading-[1.1] mb-8">
@@ -27,7 +27,7 @@ export function Hero() {
             </h1>
             
             <p className="text-lg md:text-xl text-muted max-w-2xl mb-12 leading-relaxed">
-              Software Development Engineer focused on full-stack web applications, scalable backend infrastructure, AI-integrated workflows, and protocol security.
+              I engineer full-stack applications, backend systems, and AI-integrated tools, combining strong programming fundamentals with an emphasis on reliability, security, and practical problem-solving.
             </p>
             
             <div className="flex flex-wrap items-center gap-4">

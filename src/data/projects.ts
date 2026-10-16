@@ -72,6 +72,7 @@ export const projects: Project[] = [
     "ANIMATED POSITIONING"
   ],
   github: "https://github.com/Sourav-IIITBPL/FLUX-Intelligent-Creative-Layout-Engine.git",
+  demo: "https://flux-intelligent-creative-layout-en.vercel.app/",
 },
   {
     slug: "protocol-invariant-checker",

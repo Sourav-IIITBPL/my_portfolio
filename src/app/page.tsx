@@ -2,14 +2,13 @@ import { Hero } from "@/components/home/Hero";
 import { Proof } from "@/components/home/Proof";
 import { Philosophy } from "@/components/home/Philosophy";
 import { FeaturedProjects } from "@/components/home/FeaturedProjects";
+import { Experience } from "@/components/home/Experience";
 import { AiNative } from "@/components/home/AiNative";
 import { SecurityResearch } from "@/components/home/SecurityResearch";
-import { Experience } from "@/components/home/Experience";
 import { Skills } from "@/components/home/Skills";
 import { Education } from "@/components/home/Education";
 import { Achievements } from "@/components/home/Achievements";
 import { Certificates } from "@/components/home/Certificates";
-import { SystemMap } from "@/components/home/SystemMap";
 import { Contact } from "@/components/home/Contact";
 
 export default function Home() {
@@ -19,14 +18,13 @@ export default function Home() {
       <Proof />
       <Philosophy />
       <FeaturedProjects />
+      <Experience />
       <AiNative />
       <SecurityResearch />
-      <Experience />
       <Skills />
       <Education />
       <Achievements />
       <Certificates />
-      <SystemMap />
       <Contact />
     </>
   );
