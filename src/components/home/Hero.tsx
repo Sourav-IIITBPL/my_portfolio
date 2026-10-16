@@ -5,6 +5,8 @@ import Link from "next/link";
 import { ArrowRight, FileText } from "lucide-react";
 import Image from "next/image";
 
+import { siteConfig } from "@/data/config";
+
 export function Hero() {
   return (
     <section className="min-h-[85vh] flex flex-col justify-center pt-24 pb-12">
@@ -17,7 +19,7 @@ export function Hero() {
             className="md:col-span-8 order-2 md:order-1"
           >
             <div className="inline-block px-3 py-1 mb-8 text-xs font-mono tracking-widest text-muted border border-border rounded-full bg-surface">
-              SOURAV YADAV / SOFTWARE ENGINEER
+              SOURAV YADAV / SOFTWARE DEVELOPMENT ENGINEER
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground leading-[1.1] mb-8">
@@ -25,7 +27,7 @@ export function Hero() {
             </h1>
             
             <p className="text-lg md:text-xl text-muted max-w-2xl mb-12 leading-relaxed">
-              A software engineer focused on full-stack systems, backend infrastructure, AI-native tooling, and security.
+              Software Development Engineer focused on full-stack web applications, scalable backend infrastructure, AI-integrated workflows, and protocol security.
             </p>
             
             <div className="flex flex-wrap items-center gap-4">
@@ -36,7 +38,7 @@ export function Hero() {
                 View Projects <ArrowRight className="w-4 h-4" />
               </Link>
               <a 
-                href="/resume/26-09-SDE.pdf" 
+                href={siteConfig.resumeUrl} 
                 target="_blank" 
                 rel="noreferrer"
                 className="px-6 py-3 bg-surface border border-border text-foreground font-medium rounded-sm hover:bg-surface-hover transition-colors flex items-center gap-2"
@@ -46,9 +48,13 @@ export function Hero() {
             </div>
             
             <div className="mt-16 pt-8 border-t border-border flex flex-wrap gap-6 text-sm text-muted font-mono">
-              <a href="https://github.com/Sourav-IIITBPL" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">GITHUB</a>
-              <a href="https://linkedin.com/in/0xsourav" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">LINKEDIN</a>
-              <a href="https://leetcode.com/u/SouravIIIT" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">LEETCODE</a>
+              <a href={siteConfig.links.github} target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">GITHUB</a>
+              <a href={siteConfig.links.linkedin} target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">LINKEDIN</a>
+              <a href={siteConfig.links.leetcode} target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">LEETCODE</a>
+              <a href={siteConfig.links.codechef} target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">CODECHEF</a>
+              {siteConfig.links.twitter && (
+                <a href={siteConfig.links.twitter} target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">X / TWITTER</a>
+              )}
             </div>
           </motion.div>
           

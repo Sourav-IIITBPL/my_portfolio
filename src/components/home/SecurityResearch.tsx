@@ -42,10 +42,48 @@ export function SecurityResearch() {
                 </div>
               </div>
 
-              <ul className="space-y-2 text-sm font-mono text-muted">
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent"></span> Invariant Reasoning</li>
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent"></span> Architecture Analysis</li>
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent"></span> Edge-Case Identification</li>
+              <div className="mb-6 pt-2">
+                <div className="text-xs font-mono text-muted mb-2 tracking-wider">COMPETITIVE AUDITING PROFILES:</div>
+                <div className="flex flex-wrap gap-2">
+                  <a
+                    href="https://audits.sherlock.xyz/watson/sourav_DEV"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xs font-mono px-3 py-1 rounded bg-surface border border-border text-foreground hover:border-accent hover:text-accent transition-colors"
+                  >
+                    Sherlock ↗
+                  </a>
+                  <a
+                    href="https://code4rena.com/%40Sourav_DEV"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xs font-mono px-3 py-1 rounded bg-surface border border-border text-foreground hover:border-accent hover:text-accent transition-colors"
+                  >
+                    Code4rena ↗
+                  </a>
+                  <a
+                    href="https://cantina.xyz/u/0xSourav"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xs font-mono px-3 py-1 rounded bg-surface border border-border text-foreground hover:border-accent hover:text-accent transition-colors"
+                  >
+                    Cantina ↗
+                  </a>
+                  <a
+                    href="https://github.com/Sourav-IIITBPL/audits"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xs font-mono px-3 py-1 rounded bg-surface border border-border text-foreground hover:border-accent hover:text-accent transition-colors"
+                  >
+                    Audits Repo ↗
+                  </a>
+                </div>
+              </div>
+
+              <ul className="space-y-2 text-sm font-mono text-muted pt-2 border-t border-border/50">
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent"></span> Invariant Reasoning & State Transition Analysis</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent"></span> Software Architecture Analysis & Threat Modeling</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-accent"></span> Reproducible Foundry Proof-of-Concepts (PoCs)</li>
               </ul>
             </motion.div>
           </div>

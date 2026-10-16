@@ -18,6 +18,17 @@ export const skillsData: SkillCategory[] = [
     skills: ["Node.js", "Express.js", "REST APIs", "PostgreSQL", "MySQL", "Redis", "Prisma", "JWT"]
   },
   {
+  title: "AI / LLM Engineering",
+  skills: [
+    "Python",
+    "LLM API Integration",
+    "Agentic Workflow Design",
+    "Prompt Engineering",
+    "LLM-Integrated Applications",
+    "Basic Machine Learning and Deep Learning"
+  ]
+},
+  {
     title: "Tools / Platforms",
     skills: ["Git", "GitHub", "Linux", "Docker", "Postman", "Vercel"]
   },

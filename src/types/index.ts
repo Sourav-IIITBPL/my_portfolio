@@ -15,6 +15,9 @@ export type Experience = {
   id: string;
   role: string;
   company: string;
+  link: string | Record<string, string>;
+  github?: string;
+  type: string;
   period: string;
   location?: string;
   description: string[];
@@ -42,4 +45,15 @@ export type Certificate = {
 export type SkillCategory = {
   title: string;
   skills: string[];
+};
+
+export type Education = {
+  id: string;
+  institution: string;
+  degree: string;
+  field: string;
+  startDate: string;
+  endDate: string;
+  grade: string;
+  status: string;
 };

@@ -94,8 +94,24 @@ export function FeaturedProjects() {
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     ) : (
-                      <div className="absolute inset-0 flex items-center justify-center font-mono text-muted/50 text-4xl font-bold bg-surface-hover">
-                        {project.title.charAt(0)}
+                      <div className="absolute inset-0 flex flex-col justify-between p-6 bg-gradient-to-br from-surface to-surface-hover font-mono group-hover:bg-surface-hover transition-colors">
+                        <div className="flex items-center gap-1.5 opacity-60">
+                          <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                          <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                          <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                          <span className="ml-2 text-xs text-muted">src/{project.slug}</span>
+                        </div>
+                        <div className="text-center my-auto py-6">
+                          <div className="text-2xl md:text-3xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors">{project.title}</div>
+                          <div className="text-xs text-muted uppercase tracking-wider">{project.category}</div>
+                        </div>
+                        <div className="flex flex-wrap gap-1.5 justify-center">
+                          {project.technologies.slice(0, 4).map((t) => (
+                            <span key={t} className="text-[11px] px-2 py-0.5 rounded bg-background/80 border border-border text-muted">
+                              {t}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     )}
                   </Link>

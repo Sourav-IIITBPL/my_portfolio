@@ -42,4 +42,3 @@ This project is ready to be deployed to Vercel. Connect the GitHub repository to
 - `/src/components` - React components organized by feature (home, layout, ui).
 - `/src/data` - Typed configuration and content files (projects, skills, etc.).
 - `/src/types` - TypeScript interfaces.
-- `/public` - Static assets including images, certificates, and resume.

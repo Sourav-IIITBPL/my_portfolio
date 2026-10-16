@@ -2,13 +2,13 @@
 
 import { motion } from "framer-motion";
 import { achievements } from "@/data/achievements";
-import { Award } from "lucide-react";
+import { Award, ExternalLink } from "lucide-react";
 
 export function Achievements() {
   return (
     <section className="py-24" id="achievements">
       <div className="container mx-auto px-6 md:px-12 max-w-7xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-16">Achievements</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-16">Achievements & Recognitions</h2>
         
         <div className="grid md:grid-cols-2 gap-6">
           {achievements.map((achievement, index) => {
@@ -17,12 +17,24 @@ export function Achievements() {
                 <div className="p-3 bg-background border border-border rounded-md text-accent shrink-0 group-hover:scale-110 transition-transform">
                   <Award className="w-6 h-6" />
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-accent transition-colors">{achievement.title}</h3>
-                  <div className="text-sm font-mono text-muted mb-4">{achievement.issuer}</div>
-                  <p className="text-muted leading-relaxed">
+                <div className="flex-1">
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-accent transition-colors">
+                      {achievement.title}
+                    </h3>
+                    {achievement.link && (
+                      <ExternalLink className="w-4 h-4 text-muted group-hover:text-accent transition-colors shrink-0" />
+                    )}
+                  </div>
+                  <div className="text-xs font-mono text-muted mb-3">{achievement.issuer}</div>
+                  <p className="text-muted text-sm leading-relaxed mb-2">
                     {achievement.description}
                   </p>
+                  {achievement.link && (
+                    <span className="text-xs font-mono text-accent inline-flex items-center gap-1">
+                      Verified Profile ↗
+                    </span>
+                  )}
                 </div>
               </div>
             );

@@ -5,6 +5,7 @@ import { Command } from "cmdk";
 import { useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
 import { Search } from "lucide-react";
+import { siteConfig } from "@/data/config";
 
 export function CommandPalette() {
   const [open, setOpen] = React.useState(false);
@@ -58,29 +59,41 @@ export function CommandPalette() {
             <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => router.push("/#experience"))}>
               View Experience
             </Command.Item>
-            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => router.push("/#research"))}>
-              View Research
-            </Command.Item>
             <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => router.push("/#skills"))}>
               View Skills
+            </Command.Item>
+            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => router.push("/#education"))}>
+              View Education
+            </Command.Item>
+            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => router.push("/#research"))}>
+              View Research
             </Command.Item>
             <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => router.push("/#certificates"))}>
               View Certificates
             </Command.Item>
+            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => router.push("/#contact"))}>
+              Contact Me
+            </Command.Item>
           </Command.Group>
           
-          <Command.Group heading="External" className="text-xs font-mono text-muted px-2 py-1 mt-2">
-            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open("/resume/26-09-SDE.pdf", "_blank"))}>
-              View Resume
+          <Command.Group heading="External & Socials" className="text-xs font-mono text-muted px-2 py-1 mt-2">
+            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open(siteConfig.resumeUrl, "_blank"))}>
+              View Resume (PDF)
             </Command.Item>
-            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open("https://github.com/Sourav-IIITBPL", "_blank"))}>
+            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open(`mailto:${siteConfig.email}`))}>
+              Send Email ({siteConfig.email})
+            </Command.Item>
+            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open(siteConfig.links.github, "_blank"))}>
               Open GitHub
             </Command.Item>
-            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open("https://linkedin.com/in/0xsourav", "_blank"))}>
+            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open(siteConfig.links.linkedin, "_blank"))}>
               Open LinkedIn
             </Command.Item>
-            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open("https://leetcode.com/u/SouravIIIT", "_blank"))}>
+            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open(siteConfig.links.leetcode, "_blank"))}>
               Open LeetCode
+            </Command.Item>
+            <Command.Item className="px-2 py-3 rounded-md cursor-pointer hover:bg-surface-hover text-foreground text-sm flex items-center aria-selected:bg-surface-hover aria-selected:text-accent transition-colors" onSelect={() => runCommand(() => window.open(siteConfig.links.codechef, "_blank"))}>
+              Open CodeChef
             </Command.Item>
           </Command.Group>
 

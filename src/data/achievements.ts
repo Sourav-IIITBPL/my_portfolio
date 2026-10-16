@@ -5,14 +5,14 @@ export const achievements: Achievement[] = [
     id: "leetcode",
     title: "LeetCode Knight",
     issuer: "LeetCode",
-    description: "1868 max Rating; 500 DSA problems solved through consistent practice.",
+    description: "1892 max Rating; 500 DSA problems solved through consistent practice.",
     link: "https://leetcode.com/u/SouravIIIT"
   },
   {
     id: "codechef",
     title: "2-Star Coder",
     issuer: "CodeChef",
-    description: "1493 max Rating, built through consistent participation in rated contests.",
+    description: "1543 max Rating, built through consistent participation in rated contests.",
     link: "https://www.codechef.com/users/sourav_yadav25"
   },
   {

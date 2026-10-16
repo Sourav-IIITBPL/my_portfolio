@@ -42,10 +42,37 @@ export const projects: Project[] = [
       "ACCEPTANCE / DISPUTE",
       "SETTLEMENT"
     ],
-    github: "https://github.com/Sourav-IIITBPL",
+    github: "https://github.com/SettleOne/about.git",
     demo: "https://settleone-marketing.settleone.workers.dev",
     image: "/images/settleone-project-logo.png"
   },
+  {
+  slug: "flux",
+  title: "FLUX",
+  category: "Intelligent Creative Layout Engine",
+  description:
+    "A deterministic, constraint-based layout engine that adapts multi-element creative layouts across device sizes.",
+  technologies: [
+    "React",
+    "TypeScript",
+    "Zustand",
+    "Framer Motion",
+    "Constraint Satisfaction",
+    "Collision Resolution"
+  ],
+  highlights: [
+    "Implemented priority-based sizing and axis-aligned bounding-box collision resolution.",
+    "Separated pure-function layout computation from React rendering.",
+    "Used Zustand for state management and Framer Motion for animated positioning."
+  ],
+  architecture: [
+    "LAYOUT COMPUTATION",
+    "REACT RENDERING",
+    "STATE MANAGEMENT",
+    "ANIMATED POSITIONING"
+  ],
+  github: "https://github.com/Sourav-IIITBPL/FLUX-Intelligent-Creative-Layout-Engine.git",
+},
   {
     slug: "protocol-invariant-checker",
     title: "Protocol Invariant Checker",
@@ -76,6 +103,13 @@ export const projects: Project[] = [
       "Built backend services for optimal pricing and execution cost calculation.",
       "Designed transaction pipelines combining Express.js and smart contracts."
     ],
-    github: "https://github.com/Sourav-IIITBPL"
+    architecture: [
+      "DEX INTEGRATION",
+      "LIQUIDITY DISCOVERY",
+      "PRICING ENGINE",
+      "EXECUTION OPTIMIZATION",
+      "TRANSACTION PIPELINE"
+    ],
+    github: "https://github.com/Sourav-IIITBPL/dexgateway",
   }
 ];

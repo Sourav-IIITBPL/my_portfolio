@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const metrics = [
-  { label: "DSA PROBLEMS", value: "500+" },
-  { label: "LEETCODE RATING", value: "1868" },
-  { label: "SECURITY REVIEWS", value: "20+" },
-  { label: "EXPECTED GRAD", value: "2027" },
+  { label: "DSA PROBLEMS SOLVED", value: "500+" },
+  { label: "LEETCODE KNIGHT", value: "1892" },
+  { label: "CODECHEF 2-STAR", value: "1543" },
+  { label: "AUDITED PROTOCOLS", value: "20+" },
 ];
 
 export function Proof() {

@@ -6,6 +6,7 @@ import { AiNative } from "@/components/home/AiNative";
 import { SecurityResearch } from "@/components/home/SecurityResearch";
 import { Experience } from "@/components/home/Experience";
 import { Skills } from "@/components/home/Skills";
+import { Education } from "@/components/home/Education";
 import { Achievements } from "@/components/home/Achievements";
 import { Certificates } from "@/components/home/Certificates";
 import { SystemMap } from "@/components/home/SystemMap";
@@ -22,6 +23,7 @@ export default function Home() {
       <SecurityResearch />
       <Experience />
       <Skills />
+      <Education />
       <Achievements />
       <Certificates />
       <SystemMap />

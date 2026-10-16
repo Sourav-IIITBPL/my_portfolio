@@ -19,17 +19,20 @@ export function Skills() {
               transition={{ delay: index * 0.1 }}
               className="p-6 border border-border rounded-lg bg-background"
             >
-              <h3 className="text-sm font-mono text-muted uppercase tracking-widest mb-6 border-b border-border pb-4">
-                {category.title}
+              <h3 className="text-xs font-mono text-muted uppercase tracking-widest mb-4 border-b border-border pb-3 flex items-center justify-between">
+                <span>{category.title}</span>
+                <span className="text-[10px] text-muted/60">{category.skills.length} skills</span>
               </h3>
-              <ul className="space-y-3">
+              <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill) => (
-                  <li key={skill} className="text-foreground font-medium flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-border" />
+                  <span 
+                    key={skill} 
+                    className="px-2.5 py-1 text-xs font-mono border border-border rounded bg-surface/40 text-foreground hover:border-accent/40 transition-colors"
+                  >
                     {skill}
-                  </li>
+                  </span>
                 ))}
-              </ul>
+              </div>
             </motion.div>
           ))}
         </div>
