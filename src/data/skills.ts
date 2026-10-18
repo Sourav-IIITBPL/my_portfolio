@@ -25,12 +25,12 @@ export const skillsData: SkillCategory[] = [
     "Agentic Workflow Design",
     "Prompt Engineering",
     "LLM-Integrated Applications",
-    "Basic Machine Learning and Deep Learning"
+    "Machine Learning and Deep Learning"
   ]
 },
   {
     title: "Tools / Platforms",
-    skills: ["Git", "GitHub", "Linux", "Docker", "Postman", "Vercel"]
+    skills: ["Git", "GitHub", "Linux", "Docker", "Vercel"]
   },
   {
     title: "Web3 / Infrastructure",
