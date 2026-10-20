@@ -12,5 +12,5 @@ export const siteConfig = {
     codechef: "https://www.codechef.com/users/sourav_yadav25",
     twitter: "https://x.com/0xSouravAudit",
   },
-  resumeUrl: "/resume/26-09-SDE.pdf",
+  resumeUrl: "/resume/SDE_Intern_Resume.pdf",
 };

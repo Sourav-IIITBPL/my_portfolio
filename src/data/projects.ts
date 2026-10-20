@@ -20,9 +20,9 @@ export const projects: Project[] = [
       "RISK ENGINE",
       "SECURITY DECISION"
     ],
-    github: "https://github.com/Sourav-IIITBPL",
+    github: "https://github.com/Sourav-IIITBPL/preflight",
     demo: "https://preflight-v1.vercel.app",
-    image: "/images/preflight-project-logo.png"
+    image: "/images/preflight.png"
   },
   {
     slug: "settleone",
@@ -44,36 +44,59 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/SettleOne/about.git",
     demo: "https://settleone-marketing.settleone.workers.dev",
-    image: "/images/settleone-project-logo.png"
+    image: "/images/settleone.png"
   },
   {
-  slug: "flux",
-  title: "FLUX",
-  category: "Intelligent Creative Layout Engine",
-  description:
-    "A deterministic, constraint-based layout engine that adapts multi-element creative layouts across device sizes.",
-  technologies: [
-    "React",
-    "TypeScript",
-    "Zustand",
-    "Framer Motion",
-    "Constraint Satisfaction",
-    "Collision Resolution"
-  ],
-  highlights: [
-    "Implemented priority-based sizing and axis-aligned bounding-box collision resolution.",
-    "Separated pure-function layout computation from React rendering.",
-    "Used Zustand for state management and Framer Motion for animated positioning."
-  ],
-  architecture: [
-    "LAYOUT COMPUTATION",
-    "REACT RENDERING",
-    "STATE MANAGEMENT",
-    "ANIMATED POSITIONING"
-  ],
-  github: "https://github.com/Sourav-IIITBPL/FLUX-Intelligent-Creative-Layout-Engine.git",
-  demo: "https://flux-intelligent-creative-layout-en.vercel.app/",
-},
+    slug: "flux",
+    title: "FLUX",
+    category: "Intelligent Creative Layout Engine",
+    description:
+      "A deterministic, constraint-based layout engine that adapts multi-element creative layouts across device sizes.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Zustand",
+      "Framer Motion",
+      "Constraint Satisfaction",
+      "Collision Resolution"
+    ],
+    highlights: [
+      "Implemented priority-based sizing and axis-aligned bounding-box collision resolution.",
+      "Separated pure-function layout computation from React rendering.",
+      "Used Zustand for state management and Framer Motion for animated positioning."
+    ],
+    architecture: [
+      "LAYOUT COMPUTATION",
+      "REACT RENDERING",
+      "STATE MANAGEMENT",
+      "ANIMATED POSITIONING"
+    ],
+    github: "https://github.com/Sourav-IIITBPL/FLUX-Intelligent-Creative-Layout-Engine.git",
+    demo: "https://flux-intelligent-creative-layout-en.vercel.app/",
+    image: "/images/flux.png"
+  },
+  {
+    slug: "ai-trip-planner",
+    title: "AI Trip Planner",
+    category: "AI-Powered Travel Application",
+    description: "A full-stack itinerary generator converting natural-language trip descriptions into structured, day-by-day travel schedules using Google Gemini.",
+    technologies: ["React", "TypeScript", "Vite", "Node.js", "Express.js", "Google Gemini API", "Zod", "Tailwind CSS"],
+    highlights: [
+      "Integrated Google Gemini API to convert natural-language travel descriptions into structured day-by-day itineraries.",
+      "Built an Express backend to keep API keys server-side and validate generated output with Zod schemas.",
+      "Engineered robust client-server error handling for malformed JSON, retries, and schema violations."
+    ],
+    architecture: [
+      "USER INPUT (NATURAL LANGUAGE)",
+      "REACT FRONTEND (VITE)",
+      "EXPRESS API BACKEND",
+      "GEMINI LLM REASONING",
+      "ZOD SCHEMA VALIDATION",
+      "STRUCTURED ITINERARY UI"
+    ],
+    demo: "https://ai-trip-planner-v1.vercel.app/",
+    image: "/images/ai-trip-planner.png"
+  },
   {
     slug: "protocol-invariant-checker",
     title: "Protocol Invariant Checker",
@@ -91,7 +114,8 @@ export const projects: Project[] = [
       "VALIDATION",
       "STRUCTURED REPORT"
     ],
-    github: "https://github.com/Sourav-IIITBPL/protocol-invariant-checker"
+    github: "https://github.com/Sourav-IIITBPL/protocol-invariant-checker",
+    image: "/images/protocol-invariant-checker.png"
   },
   {
     slug: "dexgateway",
@@ -111,6 +135,6 @@ export const projects: Project[] = [
       "EXECUTION OPTIMIZATION",
       "TRANSACTION PIPELINE"
     ],
-    github: "https://github.com/Sourav-IIITBPL/dexgateway",
+    github: "https://github.com/Sourav-IIITBPL/dexgateway"
   }
 ];

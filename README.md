@@ -1,44 +1,67 @@
-# Sourav Yadav — Portfolio
+# Sourav Yadav — SDE Portfolio
+
+Personal portfolio website showcasing software engineering, full-stack systems, backend engineering, and AI-integrated applications.
+
+Live at: [https://sourav-iiitbpl.vercel.app](https://sourav-iiitbpl.vercel.app)
+
+---
 
 ## Overview
-A production-ready personal portfolio built for software engineering, full-stack, backend, and AI-native roles. The site showcases end-to-end system architecture, security research, and engineering depth.
 
-## Features
-- **Sophisticated Dark Theme**: Engineering-focused visual design.
-- **Interactive Command Palette**: Press `Ctrl+K` or `⌘+K` to quickly navigate.
-- **System Map**: A high-level visualization of engineering domains.
-- **Project Case Studies**: Detailed breakdown of architecture and engineering decisions.
-- **Fully Responsive**: Carefully optimized for mobile, tablet, and desktop screens.
-- **Accessible**: Semantic HTML, keyboard navigation, and ARIA labels.
+Designed for Software Development Engineer (SDE), Full-Stack, Backend, and AI Engineering roles. Demonstrates end-to-end software architecture, algorithmic problem solving, clean system design, and practical engineering rigor.
+
+---
+
+## Key Features
+
+- **High-Performance Dark Interface**: Built with modern typography, subtle borders, and accessible high-contrast palettes.
+- **Global Command Palette (`Ctrl+K` / `⌘+K`)**: Rapid keyboard navigation to all portfolio sections, verified profiles, and external links.
+- **Featured Projects**: Complete architectural breakdown, highlights, system data flows, and live demo / source links:
+  - **PreFlight**: Pre-transaction risk analysis platform with on-chain guards and off-chain simulation.
+  - **SettleOne**: B2B payment commitment platform supporting escrow and rule-based settlement.
+  - **FLUX**: Deterministic constraint-satisfaction creative layout engine.
+  - **AI Trip Planner**: Gemini-powered full-stack itinerary generator with server-side Zod validation.
+  - **Protocol Invariant Checker**: Modular Rust CLI for automated protocol state verification.
+  - **DexGateway**: Multi-DEX transaction routing infrastructure with liquidity aggregation.
+- **Interactive Horizontal Certifications**: High-resolution certificate previews that expand in full resolution on click.
+- **Interactive Experience & Security Research**: Complete breakdown of competitive audits and software engineering experience.
+- **Responsive & Accessible**: Strict semantic markup, keyboard accessibility, and optimized touch interaction across mobile and desktop.
+
+---
 
 ## Tech Stack
-- **Framework**: Next.js (App Router)
+
+- **Framework**: Next.js 16 (App Router with Turbopack)
 - **Styling**: Tailwind CSS v4
 - **Animations**: Framer Motion
 - **Icons**: Lucide React
-- **Types**: TypeScript
+- **Command Menu**: cmdk
+- **Theme**: next-themes
+- **Language**: TypeScript (strict mode)
 - **Deployment**: Vercel
 
-## Development
-To start the development server:
+---
+
+## Local Development
+
 ```bash
+# Install dependencies
 npm install
+
+# Start local development server
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Build
-To create an optimized production build:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## Production Build
+
 ```bash
+# Type check and build
 npm run build
+
+# Start production server
 npm start
 ```
-
-## Deployment
-This project is ready to be deployed to Vercel. Connect the GitHub repository to a Vercel project, and the settings will be automatically detected.
-
-## Project Structure
-- `/src/app` - Next.js App Router pages and layouts.
-- `/src/components` - React components organized by feature (home, layout, ui).
-- `/src/data` - Typed configuration and content files (projects, skills, etc.).
-- `/src/types` - TypeScript interfaces.

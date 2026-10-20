@@ -59,7 +59,7 @@ export const certificates: Certificate[] = [
     id: "algouniversitydp",
     title: "AlgoUniversity DP",
     issuer: "AlgoUniversity",
-    image: "/certificates/algoUniversityDP.pdf"
+    image: "/certificates/algoUniversityDP.png"
   },
   {
     id: "nxtwave",

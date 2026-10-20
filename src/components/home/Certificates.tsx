@@ -23,11 +23,17 @@ export function Certificates() {
                 transition={{ delay: index * 0.05 }}
                 className="group relative flex-none w-[85vw] md:w-[450px] overflow-hidden rounded-xl border border-border bg-background snap-center"
               >
-                <div className="aspect-[4/3] w-full relative border-b border-border bg-surface">
+                <a 
+                  href={cert.image}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="aspect-[4/3] w-full relative border-b border-border bg-surface block cursor-pointer group/cert"
+                  aria-label={`View certificate for ${cert.title}`}
+                >
                   {isPdf ? (
                     <iframe 
                       src={`${cert.image}#view=FitH&toolbar=0&navpanes=0`}
-                      className="w-full h-full pointer-events-none md:pointer-events-auto"
+                      className="w-full h-full pointer-events-none"
                       title={cert.title}
                     />
                   ) : (
@@ -35,18 +41,23 @@ export function Certificates() {
                       src={cert.image} 
                       alt={cert.title}
                       fill
-                      className="object-contain p-4"
+                      className="object-contain p-4 transition-transform duration-300 group-hover/cert:scale-105"
                     />
                   )}
-                  {/* Overlay for mobile scrolling if iframe steals touch */}
-                  {isPdf && <div className="absolute inset-0 z-10 md:hidden" />}
-                </div>
+                  {/* Invisible overlay ensures the link catches all clicks/taps over the iframe or image */}
+                  <div className="absolute inset-0 z-10" />
+                </a>
                 
                 <div className="p-4 flex items-center justify-between">
-                  <div>
+                  <a 
+                    href={cert.image}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-accent transition-colors block flex-1 min-w-0"
+                  >
                     <h3 className="font-bold text-foreground mb-1 line-clamp-1">{cert.title}</h3>
                     <span className="text-xs font-mono text-muted">{cert.issuer}</span>
-                  </div>
+                  </a>
                   <a 
                     href={cert.image} 
                     target="_blank" 

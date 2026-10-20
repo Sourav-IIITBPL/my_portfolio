@@ -85,13 +85,13 @@ export function FeaturedProjects() {
                 </div>
                 
                 <div className="md:col-span-7 order-1 md:order-2">
-                  <Link href={`/projects/${project.slug}`} className="block overflow-hidden rounded-lg border border-border bg-surface aspect-[4/3] relative group-hover:border-muted transition-colors">
+                  <Link href={`/projects/${project.slug}`} className="block overflow-hidden rounded-lg border border-border bg-surface aspect-[4/3] md:aspect-[16/10] relative group-hover:border-muted transition-colors">
                     {project.image ? (
                       <Image 
                         src={project.image} 
                         alt={project.title} 
                         fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       />
                     ) : (
                       <div className="absolute inset-0 flex flex-col justify-between p-6 bg-gradient-to-br from-surface to-surface-hover font-mono group-hover:bg-surface-hover transition-colors">

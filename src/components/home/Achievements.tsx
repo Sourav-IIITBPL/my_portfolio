@@ -32,7 +32,7 @@ export function Achievements() {
                   </p>
                   {achievement.link && (
                     <span className="text-xs font-mono text-accent inline-flex items-center gap-1">
-                      Verified Profile ↗
+                      {achievement.link.startsWith("/certificates") ? "View Certificate ↗" : "Verified Profile ↗"}
                     </span>
                   )}
                 </div>
